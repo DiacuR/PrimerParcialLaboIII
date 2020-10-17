@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="./utils.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="Modificar" hidden>
+        <div id="Cerrar">
+            <input type="button" value="x" class="btnPeligro" id="btnCerrar">
+        </div>
+        <label class="labels" for="name">Nombre: </label><br>
+        <input class="inputNormal" type="text" name="nombre" id="name" placeholder="Tu nombre..." required/><br>
+
+        <label class="labels" >Cuatrimestre: </label><br>
+        <select name="select" id="cuatrimestre">
+            <option disabled selected>Seleccione una opcion</option> 
+            <option disabled selected value="1">1</option> 
+            <option disabled selected value="2">2</option>
+            <option disabled selected value="3">3</option>
+            <option disabled selected value="4">4</option>
+          </select><br>
+
+        <label class="labels">Fecha de Final: </label><br>
+        <input class="inputNormal" type="date" id="date"required/><br>
+
+        <label class="labels" for="turno">Turno: </label><br><br>
+        Mañana<input class="inputNormal" type="radio" name="turno" id="mañana"/>
+        Tarde<input class="inputNormal" type="radio" name="turno" id="tarde" /><br>
+
+        <div id="UpdateTable">
+            <input type="button" value="Modificar" class="btnExito" id="btnModificar">
+            <input type="button" value="Eliminar" class="btnPeligro" id="btnEliminar">
+        </div>   
+
+    </div>
+    <div class="tabla">
+        <div id="fondo">
+            <div id="spinner"></div>
+        </div>
+    
+        <table id="tablaPersonas">
+            <thead>
+                <th>Nombre</th><th>Cuatrimestre</th><th>Fecha De Final</th><th>Turno</th><th>Materias</th>
+            </thead>
+            <tbody id="TablaBody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

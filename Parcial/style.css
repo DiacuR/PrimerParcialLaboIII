@@ -1,0 +1,124 @@
+.btnFormulario,input[type="submit"]{    
+    background-color: rgb(0, 123, 255);    
+}
+
+.btnFormulario:hover,input[type="submit"]:hover{
+    background-color: rgb(0, 105, 217);
+}
+
+.btnPeligro{
+    background-color: rgb(231, 5, 5);
+}
+
+.btnPeligro:hover{
+    background-color: rgb(184, 2, 2);
+}
+
+.btnExito{
+    background-color: rgb(80, 148, 80);
+}
+
+.btnExito:hover{
+    background-color: rgb(53, 100, 53);
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0.2rem 0.5rem;
+    font-size: 15px;
+    
+}
+
+input[type="button"],input[type="submit"]{
+    border: none;
+    color: white;
+    width: 7.5rem;
+    padding: 0.8rem 1.9rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    margin: 0;
+}
+
+.tabla{
+    position: relative;
+}
+
+#fondo{
+    position: absolute;
+    opacity: 0.5;
+}
+
+#spinner{
+    position: fixed;
+    background-image: url("./img/spinnerReddit.gif");
+    background-repeat: no-repeat;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th{
+    background-color: rgb(2, 170, 170);
+    color: whitesmoke;
+}
+
+tr:nth-child(even){
+    background-color: lightgrey;
+
+}
+
+td, th{
+    padding: 11px;
+}
+
+
+#Modificar{
+    position: absolute;
+    padding-top: 5px;
+    background-color: lightgrey;
+    width: 55%;
+    box-shadow: 10px 10px 5px 0px rgb(133, 129, 129);
+    /*animation-name: abrir;
+    animation-duration: 2s;*/
+    z-index: 10;
+    right: 25%;
+    top: 25%;
+}
+
+
+#btnAbrir{
+    margin-left: 25%;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(80, 148, 80);
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    height: 50px;
+    margin: 8px 20px;
+    cursor: pointer;
+}
+
+
+
+.inputConError {
+    border: 2px solid red;
+}
+.inputNormal{
+    border: 2px solid white;
+}
+.inputSinError{
+    border: 2px solid green;
+}
